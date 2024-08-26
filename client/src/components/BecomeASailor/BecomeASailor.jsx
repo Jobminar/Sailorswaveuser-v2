@@ -40,52 +40,42 @@ const BecomeASailor = () => {
 
   return (
     <>
-      <br />
-      <br />
-      <div className="row table-1">
-        <div className="sailor-text col">
-          <p className="sailor-text1">Become a Sailor</p>
-          <p className="sailor-text2">
-            Used and supported in over the countries aroud the globe. <br />
-            We'll work with you to open more doors and close more sales across
-            all verticals.
-          </p>
-        </div>
-        <div className="col">
+      <div className="become-main">
+        <div className="become-content">
+          <h1>Become a Sailor</h1>
           <br />
-          <img src={Pattern3} className="image3" alt="pattern3" />
-          <img src={Pattern4} className="image4" alt="pattern4" />
-          <div>
-            <form onSubmit={handleSubmit} className=" text-start form-total">
-              <div className="form-div-1">
-                <div className="row">
-                  <div className="col name mt-2">
-                    <label>First Name</label>
-                    <input
-                      type="text"
-                      name="firstName"
-                      value={formData.firstName}
-                      onChange={handleChange}
-                      className="form-control placeholder1 mb-2"
-                      aria-describedby="FirstName"
-                      placeholder="enter first name"
-                    />
-                  </div>
-                  <div className="col name mt-2">
-                    <label>Last Name</label>
-                    <input
-                      type="text"
-                      name="lastName"
-                      value={formData.lastName}
-                      onChange={handleChange}
-                      className="form-control placeholder1 mb-2"
-                      aria-describedby="LastName"
-                      placeholder="enter last name"
-                    />
-                  </div>
-                </div>
-                <div className="name">
-                  <label>Email</label>
+          <p>Used and supported in over the countries around the globe.<br />
+            We’ll work with you to open more doors and close more sales across all verticals.</p>
+        </div>
+        <div className="become-form">
+          <div className="name">
+            <div className="f-name">
+              <label>First Name</label>
+              <input
+                type="text"
+                name="firstName"
+                value={formData.firstName}
+                onChange={handleChange}
+                className="form-control placeholder1 mb-2"
+                aria-describedby="FirstName"
+                placeholder="enter first name"
+              />
+            </div>
+            <div className="l-name">
+              <label>Last Name</label>
+              <input
+                type="text"
+                name="lastName"
+                value={formData.lastName}
+                onChange={handleChange}
+                className="form-control placeholder1 mb-2"
+                aria-describedby="LastName"
+                placeholder="enter last name"
+              />
+            </div>
+          </div>
+          <div className="email">
+          <label>Email</label>
                   <input
                     type="email"
                     name="email"
@@ -95,58 +85,59 @@ const BecomeASailor = () => {
                     aria-describedby="emailHelp"
                     placeholder="enter email address"
                   />
-                </div>
-                <div className="row name">
-                  <div className="col ">
-                    <label>Phone Number</label>
-                    <input
-                      type="text"
-                      name="phoneNumber"
-                      value={formData.phoneNumber}
-                      onChange={handleChange}
-                      className="form-control placeholder1 mb-2"
-                      placeholder="enter contact number"
-                    />
-                  </div>
-                  <div className="col ">
-                    <label className="">Select state</label>
-                    <br />
-                    <select
-                      className="form-control placeholder1 mb-2"
-                      name="state"
-                      value={formData.state}
-                      onChange={handleChange}
-                    >
-                      <option className="form-option placeholder1" value="">
-                        Select
-                      </option>
-                      <option className="form-option" value="State 1">
-                        State 1
-                      </option>
-                      <option className="form-option" value="State 2">
-                        State 2
-                      </option>
-                      <option className="form-option" value="State 3">
-                        State 3
-                      </option>
-                    </select>
-                  </div>
-                </div>
-                <div className="name">
-                  <label>Country</label>
-                  <input
-                    type="text"
-                    name="country"
-                    value={formData.country}
-                    onChange={handleChange}
-                    className="form-control placeholder1"
-                    placeholder="enter your country"
-                  />
-                </div>
-                <div className="apply-div">
+          </div>
+          <div className="phone-state">
+
+            <div>
+              <label>Phone Number</label>
+              <input
+                type="text"
+                name="phoneNumber"
+                value={formData.phoneNumber}
+                onChange={handleChange}
+                className="form-control placeholder1 mb-2"
+                placeholder="enter contact number"
+              />
+            </div>
+            <div>
+              <label className="">Select state</label>
+              <br />
+              <select
+                className="form-control placeholder1 mb-2"
+                name="state"
+                value={formData.state}
+                onChange={handleChange}
+              >
+                <option className="form-option placeholder1" value="">
+                  Select
+                </option>
+                <option className="form-option" value="State 1">
+                  State 1
+                </option>
+                <option className="form-option" value="State 2">
+                  State 2
+                </option>
+                <option className="form-option" value="State 3">
+                  State 3
+                </option>
+              </select>
+            </div>
+          </div>
+          <div className="country"> 
+              <label>Country</label>
+              <input
+                type="text"
+                name="country"
+                value={formData.country}
+                onChange={handleChange}
+                className="form-control placeholder1"
+                placeholder="enter your country"
+              />
+          </div>
+          <div className="apply-div">
                     <button
                       type="submit"
-                      className="btn btn-primary apply-button"
+                      className="applybtn  btn btn-primary apply-button"
                     >
                       Apply
                     </button>
@@ -154,16 +145,8 @@ const BecomeASailor = () => {
                       Privacy Policy
                     </label>
                 </div>
-                <br />
-              </div>
-            </form>
-          </div>
-          <br />
         </div>
-        <div className="sailor-bottom">
-          <img src={Pattern2} className="image2" />
-          <img src={Pattern1} className="image1" />
-        </div>
+
       </div>
     </>
   );

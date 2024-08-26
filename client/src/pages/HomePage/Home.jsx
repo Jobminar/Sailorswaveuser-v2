@@ -12,13 +12,13 @@ import AboutUs from '../../components/AboutUs/AboutUs.jsx'
 const HomePage = () => {
   return (
     <>
-    {/* <Header /> */}
-    {/* <Navbar /> */}
-    {/* <AboutUs /> */}
-    {/* <WhyChooseSailorsWave/> */}
-    {/* <TrustedByCompanies/> */}
-    {/* <OurServices/> */}
-    {/* <OurClients/> */}
+    <Header />
+    <Navbar />
+    <AboutUs />
+    <WhyChooseSailorsWave/>
+    <TrustedByCompanies/>
+    <OurServices/>
+    <OurClients/>
     <BecomeASailor/>
     {/* <Footer/> */}
 
