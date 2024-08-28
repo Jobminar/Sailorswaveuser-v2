@@ -129,27 +129,44 @@ body {
   }
 
   .menu-items {
-    display: none;
+   display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 50px; /* Adjusted to accommodate logo size */
-    right: 10px;
-    background-color: white;
+    
+    background-color:#0486aa ;
     color: black;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
   }
 
   .menu-items.show {
     display: flex;
+    flex-direction: column;
   }
 
-  .menu-items a {
+.menu-items a{
     color: black;
     padding: 10px 0;
     text-decoration: none;
     text-align: center;
   }
+  .mobile-nav {
+    overflow: hidden;
+    height: 2rem; /* Default height */
+    transition: height 0.3s ease;
+  }
+  
+  .mobile-nav.open {
+    height: 10rem; /* Height when menu items are shown */
+  }
+  
+  .menu-items {
+    display: none; /* Initially hide the menu items */
+  }
+  
+  .menu-items.show {
+    display: block; /* Show the menu items when isOpen is true */
+  }
+  
 }
 
