@@ -10,9 +10,10 @@ import "./OurServices.css";
 const OurServices = () => {
   return (
     <>
-      <div className="our-services">
+    <section id='services'>
+    <div className="our-services">
         <p className="text-center services">Our Services</p>
-        <div className="row">
+        <div className="service-row">
           <div className=" card-total" >
 
             <img src={Vector1} className="card-img-top rounded  d-block  card-image11" alt="Vector1" />
@@ -62,6 +63,8 @@ const OurServices = () => {
 
         </div>
       </div>
+    </section>
+      
 
     </>
   )

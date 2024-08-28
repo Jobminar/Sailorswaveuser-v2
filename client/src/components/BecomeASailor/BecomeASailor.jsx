@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import "./BecomeASailor.css";
-import Pattern1 from "../../assets/Pattern-1.png";
-import Pattern2 from "../../assets/Pattern-2.png";
-import Pattern3 from "../../assets/Pattern-3.png";
-import Pattern4 from "../../assets/Pattern-4.png";
+
 
 const BecomeASailor = () => {
   const [formData, setFormData] = useState({
@@ -40,7 +37,8 @@ const BecomeASailor = () => {
 
   return (
     <>
-      <div className="become-main">
+    <section id="contact-us">
+    <div className="become-main">
         <div className="become-content">
           <h1>Become a Sailor</h1>
           <br />
@@ -58,7 +56,7 @@ const BecomeASailor = () => {
                 onChange={handleChange}
                 className="form-control placeholder1 mb-2"
                 aria-describedby="FirstName"
-                placeholder="enter first name"
+                placeholder="Enter first name"
               />
             </div>
             <div className="l-name">
@@ -70,7 +68,7 @@ const BecomeASailor = () => {
                 onChange={handleChange}
                 className="form-control placeholder1 mb-2"
                 aria-describedby="LastName"
-                placeholder="enter last name"
+                placeholder="Enter last name"
               />
             </div>
           </div>
@@ -83,7 +81,7 @@ const BecomeASailor = () => {
                     onChange={handleChange}
                     className="form-control placeholder1 mb-2"
                     aria-describedby="emailHelp"
-                    placeholder="enter email address"
+                    placeholder="Enter email address"
                   />
           </div>
           <div className="phone-state">
@@ -96,7 +94,7 @@ const BecomeASailor = () => {
                 value={formData.phoneNumber}
                 onChange={handleChange}
                 className="form-control placeholder1 mb-2"
-                placeholder="enter contact number"
+                placeholder="Enter contact number"
               />
             </div>
             <div>
@@ -131,7 +129,7 @@ const BecomeASailor = () => {
                 value={formData.country}
                 onChange={handleChange}
                 className="form-control placeholder1"
-                placeholder="enter your country"
+                placeholder="Enter your country"
               />
           </div>
           <div className="apply-div">
@@ -141,13 +139,12 @@ const BecomeASailor = () => {
                     >
                       Apply
                     </button>
-                    <label className="privacy-element">
-                      Privacy Policy
-                    </label>
                 </div>
         </div>
 
       </div>
+    </section>
+      
     </>
   );
 };

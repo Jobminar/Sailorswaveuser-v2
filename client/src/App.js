@@ -13,6 +13,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import MyApplication from './pages/Profile/MyApplication/MyApplication';
 import { HashLink } from 'react-router-hash-link';
+import OurServices from './components/OurServices/OurServices';
 
 function App() {
   return (
@@ -25,7 +26,6 @@ function App() {
             element={
               <>
                 <HomePage />
-               
               </>
             } 
           />
@@ -34,10 +34,26 @@ function App() {
             element={
               <>
                 <HomePage />
-                <AboutUs /> {/* Include AboutUs on the homepage */}
               </>
             } 
           />
+           <Route 
+            path='/services' 
+            element={
+              <>
+                <HomePage />
+              </>
+            } 
+          />
+           <Route 
+            path='/contactus' 
+            element={
+              <>
+                <HomePage />
+              </>
+            } 
+          />
+
           <Route path='/Sample' element={<Sample />} />
           <Route path='/Signup' element={<Signup />} />
           <Route path='/Verification' element={<Verification />} />
@@ -47,7 +63,7 @@ function App() {
           <Route path='/MyApplication' element={<MyApplication />} />
           <Route path='/applicationpage' element={<ApplicationPage />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </Router>
       <div className="App">
       </div>

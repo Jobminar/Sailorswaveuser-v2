@@ -63,45 +63,93 @@ body {
   border-radius: 100px;
   cursor: pointer;
 }
-
-@media screen and (max-width: 412px) {
+.mobile-nav{
+  display: none;
+}
+.logo {
+  height: 20rem;
+  width: 20rem;
+  border: 1px solid black;
+}
+@media screen and (max-width: 600px) {
   .float-contains {
     display: none;
   }
-  /* .header {
-    display: none;
-  }
-  .collapse {
+
+  .mobile-nav {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #0486aa;
+    color: black;
+    height: 2rem; /* Default height */
+    transition: height 0.3s ease; /* Smooth transition */
+  }
+
+  .mobile-nav.bar-open {
+    height: 10rem; /* Height when menu is open */
+  }
+
+  .nav-mobile {
+    background-color: #0486aa;
+  }
+
+  .nav-mobile img {
+    height: 80%;
+    width: 10rem;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .bar {
+    height: 4px;
+    background-color: black;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .bar.open:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .bar.open:nth-child(2) {
+    opacity: 0;
+  }
+
+  .bar.open:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .menu-items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px; /* Adjusted to accommodate logo size */
+    right: 10px;
     background-color: white;
-  } */
-  .mobile-navbar {
-    display: block;
-    background-color: white;
-  }
-  .container-fluid {
-    height: 20px;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
   }
 
-  .navbar-toggler {
-    margin-left: -38px;
-    border: none;
+  .menu-items.show {
+    display: flex;
   }
 
-  .apply-btn {
-    height: 38px;
-    width: 130px;
-    background-color: #ff7f3f;
-    color: rgb(255, 255, 255);
-    border: none;
-    padding: 11px;
-    border-radius: 25px;
-    font-size: 12px;
-    margin-left: 15rem;
-  }
-  .mobile-header{
-    max-width: 412px;
-
+  .menu-items a {
+    color: black;
+    padding: 10px 0;
+    text-decoration: none;
+    text-align: center;
   }
 }
+

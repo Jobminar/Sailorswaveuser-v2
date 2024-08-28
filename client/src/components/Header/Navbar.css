@@ -13,7 +13,7 @@ nav {
   border-radius: 5px;
   position: absolute;
   bottom: 65%;
-  left: 7.5%;
+  left: 25%;
   font-size: 24px;
 }
 
@@ -59,9 +59,15 @@ nav li {
   margin-left: 88px;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 600px) {
   .navbar-toggler {
-    border: none;
+   display: none;
+  }
+  .navbar-toggler-icon {
+    display: none;
+  }
+  p.nav-link{
+    display: none;
   }
 }
 

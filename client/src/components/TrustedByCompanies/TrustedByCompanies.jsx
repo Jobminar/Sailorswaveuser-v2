@@ -10,42 +10,29 @@ import "./TrustedByCompanies.css";
 const TrustedByCompanies = () => {
     return (
         <>
-            <div className="container trusted">
-                <div className="jumbotron text-center">
-                   
-                    <p className="display-6  trusted">Trusted By Companies including</p>
-                    
-                    <p className="lead shipment">At Sailorswave Shipment Pvt Ltd, our clients are at the heart of everything we do. Established in 2022, we have built a <br />reputation for delivering exceptional service and value to a diverse clientele across the globe.</p>
-                   
-                    <div className="container text-center comapany-line">
-                        <div className="row">
-                            <div className="col">
+            <div className=" trusted">
+                    <h2>Trusted By Companies including</h2>
+                    <p>At Sailorswave Shipment Pvt Ltd, our clients are at the heart of everything we do. Established in 2022, we have built a reputation for delivering exceptional service and value to a diverse clientele across the globe.</p>
+                        <div className="trusted-list-con">
+                            <div className="trusted-list-sub-con">
                                 <img src={MaerskLogo}  />
                             </div>
-                            <div className="col">
+                            <div className="trusted-list-sub-con">
                                 <img src={MSCLogo}  />
 
                             </div>
-                            <div className="col">
+                            <div className="trusted-list-sub-con">
                                 <img src={EvergreenLogo}  />
 
                             </div>
-                            <div className="col">
+                            <div className="trusted-list-sub-con">
                                 <img src={HapagLogo}  />
 
                             </div>
-                            <div className="col">
+                            <div className="trusted-list-sub-con">
                                 <img src={CMACMGLogo} />
-
                             </div>
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-
-                        </div>
                     </div>
-                </div>
             </div>
         </>
     )

@@ -4,6 +4,7 @@
     font-weight: 700;
     line-height: 62.61px;
     /* border: 1px solid black; */
+    text-align: left !important;
 }
 
 .para {
@@ -17,10 +18,12 @@
 }
 
 .total_about {
-    display: flex;
-    flex-direction: row;
-    /* padding: 60px 180px; */
+    display: grid;
+    grid-template-columns: 55% 40%;
+  justify-content: right;
+  align-items: center;
     /* border: 1px solid black; */
+    padding: 2rem;
 }
 
 .sailors {

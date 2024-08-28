@@ -3,20 +3,7 @@ import "./AboutUs.css";
 import navyPic from "../../assets/navy-pic.jpeg";
 
 const AboutUs = () => {
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: ''
-  });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("formdata outputed", formData);
-  };
 
   return (
     <>

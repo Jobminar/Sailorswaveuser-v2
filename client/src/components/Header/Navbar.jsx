@@ -10,7 +10,7 @@ import { HashLink} from 'react-router-hash-link';
 const Navbar = () => {
   return (
     <>
-      <div className="">
+      <div>
         <div
           id="carouselExampleIndicators"
           className="carousel slide"
@@ -94,11 +94,6 @@ const Navbar = () => {
             >
               <div className="navbar-nav container-fluid inria-serif-regular">
                 <div>
-                  {/* <img
-                    className="anchor-logo mt-1"
-                    src={AnchorLogo}
-                    alt="anchor-logo"
-                  /> */}
                   <Link to="/" className="text-decoration-none link-tag">
                     <p
                       className="nav-link text-white mx-4"
@@ -115,13 +110,20 @@ const Navbar = () => {
                 >
                   <p className="nav-link text-white mx-4">About us</p>
                 </HashLink>
-                <p className="nav-link text-white mx-4">Services</p>
+                <HashLink
+                  to="/services#services"
+                  className="text-decoration-none"
+                >
+                   <p className="nav-link text-white mx-4">Services</p>
+                </HashLink>
+               
                 <p className="nav-link text-white mx-4">Careers</p>
-                <p className="nav-link text-white mx-4">Contact us</p>
-                <p className="nav-link text-white mx-4">Dur fleet</p>
-                <Link className="text-decoration-none" to="/Signup">
-                  <p className="nav-link text-white mx-4">Login/Signup</p>
-                </Link>
+                <HashLink
+                  to="/contactus#contact-us"
+                  className="text-decoration-none"
+                >
+                   <p className="nav-link text-white mx-4">Contact us</p>
+                </HashLink>
               </div>
             </div>
           </div>
