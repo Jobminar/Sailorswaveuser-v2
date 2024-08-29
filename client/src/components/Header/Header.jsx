@@ -82,43 +82,39 @@ const Header = () => {
           </a>
         </div>
         <div id="myLinks" className={isMenuOpen ? 'show' : ''}>
-          <a href="#news"> <Link to="/" className="text-decoration-none link-tag">
-                    <p
-                      className="nav-link text-white mx-4"
-                      aria-current="page"
-                      href="#"
-                    >
-                      Home
-                    </p>
-                  </Link></a>
-          <a href="#contact"><HashLink
-                  to="/about#about-us"
-                  className="text-decoration-none"
-                >
-                  <p className="nav-link text-white mx-4">About us</p>
-                </HashLink></a>
-          <a href="#services">  <HashLink
-                  to="/services#services"
-                  className="text-decoration-none"
-                >
-                   <p className="nav-link text-white mx-4">Services</p>
-                </HashLink></a>
-          <a href="#services"><HashLink
-                  to="/contactus#contact-us"
-                  className="text-decoration-none"
-                >
-                   <p className="nav-link text-white mx-4">Careers</p>
-                </HashLink></a> 
-                <a href="#services"><HashLink
-                  to="/contactus#contact-us"
-                  className="text-decoration-none"
-                >
-                   <p className="nav-link text-white mx-4">Contact us</p>
-                </HashLink></a> 
+          <a> <Link to="/" className="text-decoration-none link-tag">
+            <p className="nav-name">
+              Home
+            </p>
+          </Link></a>
+          <a><HashLink
+            to="/about#about-us"
+            className="text-decoration-none"
+          >
+            <p className="nav-name">About us</p>
+          </HashLink></a>
+          <a>  <HashLink
+            to="/services#services"
+            className="text-decoration-none"
+          >
+            <p className="nav-name">Services</p>
+          </HashLink></a>
+          <a><HashLink
+            to="/contactus#contact-us"
+            className="text-decoration-none"
+          >
+            <p className="nav-name">Careers</p>
+          </HashLink></a>
+          <a><HashLink
+            to="/contactus#contact-us"
+            className="text-decoration-none"
+          >
+            <p className="nav-name">Contact us</p>
+          </HashLink></a>
         </div>
       </div>
 
-      
+
     </>
   );
 };
