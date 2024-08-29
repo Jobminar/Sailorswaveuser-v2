@@ -64,12 +64,7 @@ const OurClients = () => {
               <div className="clients-bottom">
               <p className="experience">It was a very good experience</p>
               <p className="card-text-1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
-                nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed
-                magna eget nibh in turpis. Consequat duis diam lacus arcu.
-                Faucibus venenatis felis id augue sit cursus pellentesque enim
-                arcu. Elementum felis magna pretium in tincidunt. Suspendisse
-                sed magna eget nibh in turpis. Consequat duis diam lacus arcu.
+              My experience at the Naval Institute was a mixed bag. On one hand, the training is rigorous and highly focused on building the skills needed for a successful naval career. The instructors are mostly veterans with a wealth of knowledge, and the facilities are modern and well-maintained
               </p>
               </div>   
             </div>
@@ -89,12 +84,7 @@ const OurClients = () => {
               <div className="clients-bottom">
               <p className="experience">It was a very good experience</p>
               <p className="card-text-1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
-                nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed
-                magna eget nibh in turpis. Consequat duis diam lacus arcu.
-                Faucibus venenatis felis id augue sit cursus pellentesque enim
-                arcu. Elementum felis magna pretium in tincidunt. Suspendisse
-                sed magna eget nibh in turpis. Consequat duis diam lacus arcu.
+              The Naval Institute is a remarkable place for anyone looking to build a career in naval service. The curriculum is comprehensive, covering everything from basic seamanship to advanced naval warfare tactics. The faculty is knowledgeable and supportive, always pushing you to achieve your best .
               </p>
               </div>   
             </div>
@@ -114,12 +104,7 @@ const OurClients = () => {
               <div className="clients-bottom">
               <p className="experience">It was a very good experience</p>
               <p className="card-text-1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
-                nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed
-                magna eget nibh in turpis. Consequat duis diam lacus arcu.
-                Faucibus venenatis felis id augue sit cursus pellentesque enim
-                arcu. Elementum felis magna pretium in tincidunt. Suspendisse
-                sed magna eget nibh in turpis. Consequat duis diam lacus arcu.
+              I had the privilege of attending the Naval Institute, and it was an experience that shaped not only my career but also my character. The rigorous training, combined with world-class instructors who bring real-world experience, prepared me for every challenge in the naval field. The institute’s focus on discipline, leadership, and teamwork has had a lasting impact on my personal and professional life
               </p>
               </div>   
             </div>

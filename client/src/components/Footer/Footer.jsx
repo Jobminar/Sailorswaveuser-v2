@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Footer.css";
-import logo from '../../assets/Footer-Sailors-Logo.png'
+import logo from '../../assets/logo-loyids.svg'
 import FooterSlide from "../../assets/Footer-Slide-1.png";
 import FooterSailorsLogo from "../../assets/Footer-Sailors-Logo.png";
 import EmailIcon2 from "../../assets/Email-icon-2.png";
@@ -47,7 +47,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="sm-section">
+        {/* <div className="sm-section">
           <p>Follow Us</p>
           <div className="sm-icons">
             
@@ -60,7 +60,7 @@ const Footer = () => {
               <img src={SocialIcon4} alt="whatsapp-icon" />
             
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
