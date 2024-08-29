@@ -94,15 +94,7 @@ const Navbar = () => {
             >
               <div className="navbar-nav container-fluid inria-serif-regular">
                 <div>
-                  <Link to="/" className="text-decoration-none link-tag">
-                    <p
-                      className="nav-link text-white mx-4"
-                      aria-current="page"
-                      href="#"
-                    >
-                      Home
-                    </p>
-                  </Link>
+                 
                 </div>
                 <HashLink
                   to="/about#about-us"
@@ -116,8 +108,13 @@ const Navbar = () => {
                 >
                    <p className="nav-link text-white mx-4">Services</p>
                 </HashLink>
+                <HashLink
+                  to="/contactus#contact-us"
+                  className="text-decoration-none"
+                >
+                   <p className="nav-link text-white mx-4">Careers</p>
+                </HashLink>
                
-                <p className="nav-link text-white mx-4">Careers</p>
                 <HashLink
                   to="/contactus#contact-us"
                   className="text-decoration-none"

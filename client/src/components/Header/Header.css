@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.mobile-navbar {
+.mobile-container {
   display: none;
 }
 
@@ -71,102 +71,77 @@ body {
   width: 20rem;
   border: 1px solid black;
 }
+
+
+/* mobile responsive */
+
+
 @media screen and (max-width: 600px) {
+  .mobile-container {
+    display: block;
+    max-width: 100%;
+    background-color: #0486aa;
+    /* border: 1px solid black; */
+    height: auto;
+  }
+
   .float-contains {
     display: none;
   }
 
-  .mobile-nav {
+  .topnav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
-    background-color: #0486aa;
-    color: black;
-    height: 2rem; /* Default height */
-    transition: height 0.3s ease; /* Smooth transition */
-  }
-
-  .mobile-nav.bar-open {
-    height: 10rem; /* Height when menu is open */
-  }
-
-  .nav-mobile {
-    background-color: #0486aa;
-  }
-
-  .nav-mobile img {
-    height: 80%;
-    width: 10rem;
-  }
-
-  .hamburger-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-  }
-
-  .bar {
-    height: 4px;
-    background-color: black;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-  }
-
-  .bar.open:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-
-  .bar.open:nth-child(2) {
-    opacity: 0;
-  }
-
-  .bar.open:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-
-  .menu-items {
-   display: flex;
-    flex-direction: column;
-    
-    background-color:#0486aa ;
-    color: black;
-    padding: 10px;
-    border-radius: 5px;
+    background-color:white ;
+    height: 3rem; 
     /* border: 1px solid black; */
   }
 
-  .menu-items.show {
+  .main-logo{/* Adjust the logo size to fit within the topnav */
+    width: 5rem;
+ height: 3rem;
+    /* border: 1px solid black; */
+    /* background-color: white; */
+  }
+
+  .topnav a.icon {
+    background-color: white;
+    display: block;
+    padding: 0.5rem;
+    position: relative;
+    right: 0.5rem;
+    color: #0486aa;
+  }
+
+  #myLinks {
+    display: none;
+  }
+
+  #myLinks.show {
     display: flex;
     flex-direction: column;
+    background-color: #0486aa;
+    /* border-top: 1px solid black; */
   }
 
-.menu-items a{
-    color: black;
-    padding: 10px 0;
+  #myLinks a {
+    color: white;
+    padding: 5px 16px;
     text-decoration: none;
-    text-align: center;
+    font-size: 17px;
+    text-align: left;
   }
-  .mobile-nav {
-    overflow: hidden;
-    height: 2rem; /* Default height */
-    transition: height 0.3s ease;
-  }
-  
-  .mobile-nav.open {
-    height: 10rem; /* Height when menu items are shown */
-  }
-  
-  .menu-items {
-    display: none; /* Initially hide the menu items */
-  }
-  
-  .menu-items.show {
-    display: block; /* Show the menu items when isOpen is true */
-  }
-  
-}
 
+  .topnav a:hover, #myLinks a:hover {
+    background-color: white;
+    color:#0486aa;
+  }
+
+  .active {
+    background-color: #0486aa;
+    color: white;
+  }
+
+
+}

@@ -12,7 +12,7 @@ const AboutUs = () => {
           <div className="about_us">
             <p id="about">About Us</p>
             <div className="para">
-              Welcome to Sailors wave Shipment Management Pvt Ltd, your trusted
+              Welcome to Loids wave Shipment Management Pvt Ltd, your trusted
               partner in comprehensive maritime solutions. Established in 2022,
               Sailors wave is dedicated to delivering top-tier services in
               onshore resource management, offshore resource management,

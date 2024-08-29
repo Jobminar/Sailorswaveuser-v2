@@ -4,28 +4,30 @@ import { Link } from "react-router-dom";
 import emailIcon from "../../assets/Email-icon.png";
 import phoneIcon from "../../assets/Phone-icon.png";
 import "./Header.css";
-import logo from "../../assets/Sailors-Logo.png";
 import { useNavigate } from "react-router-dom";
 import { HashLink} from 'react-router-hash-link';
+import { FaBars } from 'react-icons/fa';
+import logo from '../../assets/logo-loyids.svg'
 
 const Header = () => {
   const navigate = useNavigate();
-  const [isOpen, setIsOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
     <>
       <div className="float-contains">
         <div className="logo">
-          <img src={logo} alt="Sailors Wave Logo" />
+        <img src={logo} alt="logo" className="logo" onError={(e) => e.target.style.display = 'none'} />
+
         </div>
         <div className="contact-info-header">
           <div className="contact-item">
             <img src={emailIcon} alt="Email Icon" />
-            <span>sailorswaveshipmanagement@gmail.com</span>
+            <span>Loidsshipmanagement@gmail.com</span>
           </div>
           <div className="contact-item">
             <img src={phoneIcon} alt="Phone Icon" />
@@ -38,7 +40,7 @@ const Header = () => {
       </div>
 
       {/* Mobile nav bar */}
-      <div className={`mobile-nav ${isOpen ? 'open' : ''}`}>
+      {/* <div className={`mobile-nav ${isOpen ? 'open' : ''}`}>
         <div className="nav-mobile">
           <img src={logo} alt="logo" />
         </div>
@@ -71,7 +73,52 @@ const Header = () => {
                    <a className="nav-link mx-4">Contact us</a>
                 </HashLink>
         </div>
+      </div> */}
+      <div className="mobile-container">
+        <div className="topnav">
+          <img src={logo} alt="logo" className="main-logo" />
+          <a href="javascript:void(0);" className="icon" onClick={toggleMenu}>
+            <FaBars />
+          </a>
+        </div>
+        <div id="myLinks" className={isMenuOpen ? 'show' : ''}>
+          <a href="#news"> <Link to="/" className="text-decoration-none link-tag">
+                    <p
+                      className="nav-link text-white mx-4"
+                      aria-current="page"
+                      href="#"
+                    >
+                      Home
+                    </p>
+                  </Link></a>
+          <a href="#contact"><HashLink
+                  to="/about#about-us"
+                  className="text-decoration-none"
+                >
+                  <p className="nav-link text-white mx-4">About us</p>
+                </HashLink></a>
+          <a href="#services">  <HashLink
+                  to="/services#services"
+                  className="text-decoration-none"
+                >
+                   <p className="nav-link text-white mx-4">Services</p>
+                </HashLink></a>
+          <a href="#services"><HashLink
+                  to="/contactus#contact-us"
+                  className="text-decoration-none"
+                >
+                   <p className="nav-link text-white mx-4">Careers</p>
+                </HashLink></a> 
+                <a href="#services"><HashLink
+                  to="/contactus#contact-us"
+                  className="text-decoration-none"
+                >
+                   <p className="nav-link text-white mx-4">Contact us</p>
+                </HashLink></a> 
+        </div>
       </div>
+
+      
     </>
   );
 };
