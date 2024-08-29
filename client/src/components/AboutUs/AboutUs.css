@@ -73,6 +73,7 @@
     .total_about{
         display: flex;
         flex-direction: column-reverse;
+        row-gap: 2rem;
 
     }
     #about {
