@@ -142,7 +142,7 @@ const ApplicationPage = () => {
         body: data
       });
 
-      // console.log("Form Data Submitted:", data);
+      console.log("Form Data Submitted:", data);
 
       const appData = await response.json();
       console.log("Response from backend:", appData);

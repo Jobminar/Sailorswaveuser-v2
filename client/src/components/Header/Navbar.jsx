@@ -93,9 +93,12 @@ const Navbar = () => {
               id="navbarNavAltMarkup"
             >
               <div className="navbar-nav container-fluid inria-serif-regular">
-                <div>
-                 
-                </div>
+              <HashLink
+                  to="/"
+                  className="text-decoration-none"
+                >
+                  <p className="nav-link text-white mx-4">Home</p>
+                </HashLink>
                 <HashLink
                   to="/about#about-us"
                   className="text-decoration-none"

@@ -4,6 +4,8 @@ import GrassLeft from "../../assets/Grass-Left.png";
 import GrassRight from "../../assets/Grass-Right.png";
 
 import Photo16 from "../../assets/Photo-16.png";
+import Photo3 from "../../assets/Photo-3.png";
+import Photo4 from "../../assets/Photo-4.png";
 import Frame from "../../assets/Frame-1.png";
 import Star from "../../assets/5star.png"
 
@@ -54,8 +56,8 @@ const OurClients = () => {
                     <img src={Photo16} alt="profile-icon"/>
                   </div>
                   <div className="clients-title">
-                    <p>Leo</p>
-                    <p>Lead designer</p>
+                    <p>Raj</p>
+                    <p>Senior Manager</p>
                   </div>
                   <div className="star-image">
                       <img src={Star} alt="star"/>
@@ -71,11 +73,11 @@ const OurClients = () => {
             <div className="clients-sub-con">
               <div className="clients-top">
                  <div className="card-image">
-                    <img src={Photo16} alt="profile-icon"/>
+                    <img src={Photo4} alt="profile-icon"/>
                   </div>
                   <div className="clients-title">
-                    <p>Leo</p>
-                    <p>Lead designer</p>
+                    <p>Varma</p>
+                    <p>Junior Manager</p>
                   </div>
                   <div className="star-image">
                       <img src={Star} alt="star"/>
@@ -91,11 +93,11 @@ const OurClients = () => {
             <div className="clients-sub-con">
               <div className="clients-top">
                  <div className="card-image">
-                    <img src={Photo16} alt="profile-icon"/>
+                    <img src={Photo3} alt="profile-icon"/>
                   </div>
                   <div className="clients-title">
-                    <p>Leo</p>
-                    <p>Lead designer</p>
+                    <p>Jhon</p>
+                    <p>Lead</p>
                   </div>
                   <div className="star-image">
                       <img src={Star} alt="star"/>

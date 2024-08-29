@@ -7,7 +7,7 @@ import "./Header.css";
 import { useNavigate } from "react-router-dom";
 import { HashLink} from 'react-router-hash-link';
 import { FaBars } from 'react-icons/fa';
-import logo from '../../assets/logo-loyids.svg'
+import logo from '../../assets/loids-logo.png'
 
 const Header = () => {
   const navigate = useNavigate();
@@ -33,7 +33,7 @@ const Header = () => {
             <img src={phoneIcon} alt="Phone Icon" />
             <span>+91 9876543210</span>
           </div>
-          <button className="apply-btn" onClick={() => navigate("/ApplicationPage")}>
+          <button className="apply-btn" >
             Apply now
           </button>
         </div>
