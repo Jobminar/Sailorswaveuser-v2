@@ -6,23 +6,29 @@ body {
 .mobile-container {
   display: none;
 }
+.float-contains{
+  /* border: 1px solid black; */
+ display: flex;
+ justify-content: space-evenly;
+}
 
-.header {
+/* .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
   padding: 10px 20px;
+} */
+
+
+.logo img{
+  width: 11rem;
+  height: 9.5rem;
+  /* border: 1px solid black; */
 }
-
-
-.logo {
-  display: flex;
-  align-items: center;
-  float: left;
-  padding: 50px;
-  box-sizing: border-box; /* Include padding and border in the width */
-  border: none; /* Optional: to visualize the columns */
+.main-logo{
+  width: 2rem;
+  height: 2rem;
 }
 
 .contact-info-header {
@@ -38,7 +44,7 @@ body {
   /* float: right; */
   padding: 10px;
   box-sizing: border-box; /* Include padding and border in the width */
-  border: none; /* Optional: to visualize the columns */
+  /* border: 1px solid black; */
 }
 
 .contact-item {
@@ -65,11 +71,6 @@ body {
 }
 .mobile-nav{
   display: none;
-}
-.logo {
-  height: 20rem;
-  width: 20rem;
-  border: 1px solid black;
 }
 
 
@@ -99,8 +100,9 @@ body {
   }
 
   .main-logo{/* Adjust the logo size to fit within the topnav */
-    width: 5rem;
- height: 3rem;
+    width: 3rem;
+ height: 2rem;
+ margin-left: 20px;
     /* border: 1px solid black; */
     /* background-color: white; */
   }

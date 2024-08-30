@@ -197,11 +197,7 @@ input.input-width{
     box-sizing: border-box; /* Include padding and border in the width */
     border: none; /* Optional: to visualize the columns */
   }
-  
-  .logo img {
-    height: 180px;
-    width: 180px;
-  }
+
 
   .contact-info {
     display: flex;

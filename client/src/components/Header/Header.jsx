@@ -7,7 +7,7 @@ import "./Header.css";
 import { useNavigate } from "react-router-dom";
 import { HashLink} from 'react-router-hash-link';
 import { FaBars } from 'react-icons/fa';
-import logo from '../../assets/loids-logo.png'
+import logo from '../../assets/logo-loids.png'
 
 const Header = () => {
   const navigate = useNavigate();
@@ -19,23 +19,22 @@ const Header = () => {
 
   return (
     <>
-      <div className="float-contains">
+      <div className="float-contains header-main">
         <div className="logo">
-        <img src={logo} alt="logo" className="logo" onError={(e) => e.target.style.display = 'none'} />
-
+        <img src={logo} alt="logo" className="main-logo"/>
         </div>
         <div className="contact-info-header">
           <div className="contact-item">
             <img src={emailIcon} alt="Email Icon" />
-            <span>Loidsshipmanagement@gmail.com</span>
+            <span>info@loidsmarineservices.com</span>
           </div>
           <div className="contact-item">
             <img src={phoneIcon} alt="Phone Icon" />
-            <span>+91 9876543210</span>
+            <span>+91 9600638356</span>
           </div>
-          <button className="apply-btn" >
+          {/* <button className="apply-btn" >
             Apply now
-          </button>
+          </button> */}
         </div>
       </div>
 

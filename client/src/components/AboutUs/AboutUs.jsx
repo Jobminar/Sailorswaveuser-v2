@@ -17,7 +17,7 @@ const AboutUs = () => {
             </div>
             <div className="buttons">
               <button id="button1">Contact Us</button>
-              <button id="button2">Apply Now</button>
+              {/* <button id="button2">Apply Now</button> */}
             </div>
           </div>
           <div>

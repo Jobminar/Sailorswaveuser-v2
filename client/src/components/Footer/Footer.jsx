@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Footer.css";
-import logo from '../../assets/logo-loyids.svg'
+import logo from '../../assets/logo-loids.png'
 import FooterSlide from "../../assets/Footer-Slide-1.png";
 import FooterSailorsLogo from "../../assets/Footer-Sailors-Logo.png";
 import EmailIcon2 from "../../assets/Email-icon-2.png";
@@ -26,7 +26,11 @@ const Footer = () => {
           <div className="footer-main">
               <div className="logo-secion">
                     <img src={logo} alt="logo"/>  
+                    <p>
+                    6-1, jothi nagar, 2nd street, ramanuja nagar, Coimbatore, tamilnadu -641015
+                   </p>
               </div>
+              
         <div className="links-section">
           <div className="foo-col">
             <p className="list-head">COMPANY</p>

@@ -103,7 +103,7 @@ const Navbar = () => {
                   to="/about#about-us"
                   className="text-decoration-none"
                 >
-                  <p className="nav-link text-white mx-4">About us</p>
+                  <p className="nav-link text-white mx-4">About</p>
                 </HashLink>
                 <HashLink
                   to="/services#services"
@@ -122,7 +122,7 @@ const Navbar = () => {
                   to="/contactus#contact-us"
                   className="text-decoration-none"
                 >
-                   <p className="nav-link text-white mx-4">Contact us</p>
+                   <p className="nav-link text-white mx-4">Contact</p>
                 </HashLink>
               </div>
             </div>

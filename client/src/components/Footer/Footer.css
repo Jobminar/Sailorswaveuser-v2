@@ -3,17 +3,20 @@
   min-height: 15rem; 
   display: grid;
   grid-template-columns: 50% 50%;
+  padding: 3rem 0px;
 
 }
 .logo-secion{
   /* border: 1px solid black; */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .logo-secion img{
-  width: 50%;
-  height: 50%;
+  width: 11rem;
+  height: 9.5;
+  /* border: 1px solid black; */
 }
 .links-section{
   display: grid;
@@ -81,8 +84,13 @@ text-align: left;
     min-height: 15rem; 
     display: grid;
     grid-template-columns: 100%;
-    padding: 2rem 0rem;
+    padding: 2rem 1rem;
     row-gap: 1rem;
+    align-items: center;
+  }
+  .logo-secion p{
+    text-align: 
+    center;
   }
   .logo-secion{
     /* border: 1px solid black; */

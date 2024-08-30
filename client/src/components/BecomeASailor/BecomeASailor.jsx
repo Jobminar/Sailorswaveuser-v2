@@ -98,31 +98,7 @@ const BecomeASailor = () => {
               />
             </div>
             <div>
-              <label className="">Select state</label>
-              <br />
-              <select
-                className="form-control placeholder1 mb-2"
-                name="state"
-                value={formData.state}
-                onChange={handleChange}
-              >
-                <option className="form-option placeholder1" value="">
-                  Select
-                </option>
-                <option className="form-option" value="State 1">
-                  State 1
-                </option>
-                <option className="form-option" value="State 2">
-                  State 2
-                </option>
-                <option className="form-option" value="State 3">
-                  State 3
-                </option>
-              </select>
-            </div>
-          </div>
-          <div className="country"> 
-              <label>Country</label>
+            <label>Enter your Country</label>
               <input
                 type="text"
                 name="country"
@@ -131,13 +107,14 @@ const BecomeASailor = () => {
                 className="form-control placeholder1"
                 placeholder="Enter your country"
               />
+            </div>
           </div>
           <div className="apply-div">
                     <button
                       type="submit"
                       className="applybtn  btn btn-primary apply-button"
                     >
-                      Apply
+                      Submit
                     </button>
                 </div>
         </div>
