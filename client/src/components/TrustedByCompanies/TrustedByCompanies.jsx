@@ -12,7 +12,7 @@ const TrustedByCompanies = () => {
         <>
             <div className=" trusted">
                     <h2>Trusted By Companies including</h2>
-                    <p>At Loids Shipment Pvt Ltd, our clients are at the heart of everything we do. Established in 2022, we have built a reputation for delivering exceptional service and value to a diverse clientele across the globe.</p>
+                    <p>At Sailors wave  Shipment Pvt Ltd, our clients are at the heart of everything we do. Established in 2022, we have built a reputation for delivering exceptional service and value to a diverse clientele across the globe.</p>
                         <div className="trusted-list-con">
                             <div className="trusted-list-sub-con">
                                 <img src={MaerskLogo}  />

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Footer.css";
-import logo from '../../assets/logo-loids.png'
+import logo from '../../assets/Footer-Sailors-Logo.png'
 import FooterSlide from "../../assets/Footer-Slide-1.png";
 import FooterSailorsLogo from "../../assets/Footer-Sailors-Logo.png";
 import EmailIcon2 from "../../assets/Email-icon-2.png";

@@ -9,7 +9,7 @@ const WhyChooseSailorsWave = () => {
         <>
             <div className="why-choose">
                 
-                <p className="choosing">Why choose Loids</p>
+                <p className="choosing">Why choose Sailors wave </p>
                 <div className="choose-main-con">
                     <div className="col">
                         <div className="card card-size" id="card-control">

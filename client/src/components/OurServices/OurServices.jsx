@@ -20,7 +20,7 @@ const OurServices = () => {
 
             <p className="card-title title1">On Shore Joining's</p>
             <div className="card-body services-block">
-              <p className="card-text text11">At Loids, we understand the importance of efficient onshore operations</p>
+              <p className="card-text text11">At Sailors wave , we understand the importance of efficient onshore operations</p>
             </div>
           </div>
           <div className=" card-total">

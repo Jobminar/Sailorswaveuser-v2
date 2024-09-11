@@ -7,7 +7,7 @@ import "./Header.css";
 import { useNavigate } from "react-router-dom";
 import { HashLink} from 'react-router-hash-link';
 import { FaBars } from 'react-icons/fa';
-import logo from '../../assets/logo-loids.png'
+import logo from '../../assets/Sailors-Logo.png'
 
 const Header = () => {
   const navigate = useNavigate();
@@ -26,7 +26,7 @@ const Header = () => {
         <div className="contact-info-header">
           <div className="contact-item">
             <img src={emailIcon} alt="Email Icon" />
-            <span>info@loidsmarineservices.com</span>
+            <span>info@Sailors wave marineservices.com</span>
           </div>
           <div className="contact-item">
             <img src={phoneIcon} alt="Phone Icon" />
