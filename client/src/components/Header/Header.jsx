@@ -26,7 +26,7 @@ const Header = () => {
         <div className="contact-info-header">
           <div className="contact-item">
             <img src={emailIcon} alt="Email Icon" />
-            <span>info@Sailors wave marineservices.com</span>
+            <span>info@sailorswave.com</span>
           </div>
           <div className="contact-item">
             <img src={phoneIcon} alt="Phone Icon" />

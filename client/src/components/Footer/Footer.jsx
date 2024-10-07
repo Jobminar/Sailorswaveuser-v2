@@ -12,62 +12,20 @@ import SocialIcon5 from "../../assets/Social-icon-5.jpeg";
 import SocialIcon6 from "../../assets/Social-icon-6.jpeg";
 
 const Footer = () => {
-  const [email, setEmail] = useState("");
 
-  const handleChange = (e) => {
-    setEmail(e.target.value);
-  };
-  const handleSubmit = async (e) => {
-    e.preventDefault(); // Prevent default form submission
-    console.log(email);
-  };
+
   return (
     <>
-          <div className="footer-main">
+     <div className="footer-main">
               <div className="logo-secion">
                     <img src={logo} alt="logo"/>  
                     <p>
-                    6-1, jothi nagar, 2nd street, ramanuja nagar, Coimbatore, tamilnadu -641015
+                    Office Space No. 508, 5th floor, Prajay Princeton Towers, No. 11-15-14, Doctors Colony, L B Nagar, Saroornagar, Hyderabad, Telangana-500035,India
                    </p>
               </div>
-              
-        <div className="links-section">
-          <div className="foo-col">
-            <p className="list-head">COMPANY</p>
-            <ul className="footer-list">
-              <li>About Us</li>
-              <li >Reviews</li>
-              <li >Contact Us</li>
-              <li >Careers</li>
-            </ul>
-          </div>
-          <div className="foo-col">
-           <p className="list-head">Our Services</p>
-            <ul className="footer-list">
-              <li >On shore Joining</li>
-              <li >off shore Joining</li>
-              <li >Training</li>
-              <li >Placements</li>
-            </ul>
-          </div>
-        </div>
-        {/* <div className="sm-section">
-          <p>Follow Us</p>
-          <div className="sm-icons">
-            
-              <img src={SocialIcon1} alt="facebook-icon" />
-           
-              <img src={SocialIcon2} alt="instagram-icon" />
-           
-              <img src={SocialIcon3} alt="twitte-icon" />
-           
-              <img src={SocialIcon4} alt="whatsapp-icon" />
-            
-          </div>
-        </div> */}
       </div>
     </>
-  );
+  )
 };
 
 export default Footer;

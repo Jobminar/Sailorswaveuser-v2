@@ -2,7 +2,7 @@
   /* border: 1px solid black; */
   min-height: 15rem; 
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns:100%;
   padding: 3rem 0px;
 
 }
@@ -17,6 +17,10 @@
   width: 11rem;
   height: 9.5;
   /* border: 1px solid black; */
+}
+.logo-secion p{
+  margin: 0rem 2rem;
+  text-align: center;
 }
 .links-section{
   display: grid;

@@ -12,8 +12,7 @@ const AboutUs = () => {
           <div className="about_us">
             <p id="about">About Us</p>
             <div className="para">
-            Welcome to Sailors wave  Marine Services Pvt Ltd, your trusted partner in comprehensive maritime solutions. Loads Marine Services team is dedicated to delivering top-tier services in onshore resource management, offshore resource management, training, and placements.
-            Our mission is to support and enhance the global maritime industry by providing innovative and reliable solutions tailored to meet the unique needs of our clients.
+            We have applied for an RPSL license under the name Sailorswave Ship Management Private Limited, and the RPSL license is currently under process. Until the license is granted, we are unable to recruit Indian seafarers.
             </div>
             <div className="buttons">
               <button id="button1">Contact Us</button>
