@@ -21,7 +21,7 @@ const HomePage = () => {
     {/* <OurClients/> */}
     {/* <BecomeASailor/> */}
     {/* <Footer/> */}
-
+    
     </>
   );
 };

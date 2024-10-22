@@ -26,7 +26,7 @@ const AboutUs = () => {
                 <a href="tel:+919600638356">+91 9600638356</a>
               </div>
             </div>
-
+   
             <div className="buttons">
               <button id="button1">Contact Us</button>
               {/* <button id="button2">Apply Now</button> */}
