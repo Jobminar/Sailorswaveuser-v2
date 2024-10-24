@@ -5,7 +5,7 @@ import emailIcon from "../../assets/Email-icon.png";
 import phoneIcon from "../../assets/Phone-icon.png";
 const AboutUs = () => {
   return (
-    <>
+    <div className="container">
       <section id="about-us">
         <div className="total_about">
           <div className="about_us">
@@ -23,7 +23,7 @@ const AboutUs = () => {
               </div>
               <div className="contact-item">
                 <img src={phoneIcon} alt="Phone Icon" />
-                <a href="tel:+919600638356">+91 9600638356</a>
+                <a href="tel:+919600638356">+919600638356</a>
               </div>
             </div>
    
@@ -32,12 +32,12 @@ const AboutUs = () => {
               {/* <button id="button2">Apply Now</button> */}
             </div>
           </div>
-          <div>
+          {/* <div>
             <img className="sailors" src={navyPic} alt="Navy Pic" />
-          </div>
+          </div> */}
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

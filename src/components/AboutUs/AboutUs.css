@@ -153,5 +153,10 @@
     gap: 8px;
     align-items: center;
     color: black !important;
+   
   }
-  
+  .container{
+    display: flex;
+    justify-content: center;
+    
+  }
