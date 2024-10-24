@@ -5,9 +5,9 @@ import emailIcon from "../../assets/Email-icon.png";
 import phoneIcon from "../../assets/Phone-icon.png";
 import "./Header.css";
 import { useNavigate } from "react-router-dom";
-import { HashLink} from 'react-router-hash-link';
-import { FaBars } from 'react-icons/fa';
-import logo from '../../assets/Sailors-Logo.png'
+import { HashLink } from "react-router-hash-link";
+import { FaBars } from "react-icons/fa";
+import logo from "../../assets/Sailors-Logo.png";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -21,7 +21,7 @@ const Header = () => {
     <>
       <div className="float-contains header-main">
         <div className="logo">
-        <img src={logo} alt="logo" className="main-logo"/>
+          <img src={logo} alt="logo" className="main-logo" />
         </div>
         <div className="contact-info-header">
           <div className="contact-item">
@@ -30,7 +30,22 @@ const Header = () => {
           </div>
           <div className="contact-item">
             <img src={phoneIcon} alt="Phone Icon" />
-            <span>+91 9600638356</span>
+            <a
+              href="tel:+918790695737"
+              style={{ textDecoration: "None", color: "black" }}
+            >
+              +918790695737
+            </a>
+          </div>
+          <br />
+          <div className="contact-item">
+            <img src={phoneIcon} alt="Phone Icon" />
+            <a
+              href="tel:+91 40-35174520"
+              style={{ textDecoration: "None", color: "black" }}
+            >
+              +91 40-35174520
+            </a>
           </div>
           {/* <button className="apply-btn" >
             Apply now
@@ -80,40 +95,42 @@ const Header = () => {
             <FaBars />
           </a>
         </div>
-        <div id="myLinks" className={isMenuOpen ? 'show' : ''}>
-          <a> <Link to="/" className="text-decoration-none link-tag">
-            <p className="nav-name">
-              Home
-            </p>
-          </Link></a>
-          <a><HashLink
-            to="/about#about-us"
-            className="text-decoration-none"
-          >
-            <p className="nav-name">About us</p>
-          </HashLink></a>
-          <a>  <HashLink
-            to="/services#services"
-            className="text-decoration-none"
-          >
-            <p className="nav-name">Services</p>
-          </HashLink></a>
-          <a><HashLink
-            to="/contactus#contact-us"
-            className="text-decoration-none"
-          >
-            <p className="nav-name">Careers</p>
-          </HashLink></a>
-          <a><HashLink
-            to="/contactus#contact-us"
-            className="text-decoration-none"
-          >
-            <p className="nav-name">Contact us</p>
-          </HashLink></a>
+        <div id="myLinks" className={isMenuOpen ? "show" : ""}>
+          <a>
+            {" "}
+            <Link to="/" className="text-decoration-none link-tag">
+              <p className="nav-name">Home</p>
+            </Link>
+          </a>
+          <a>
+            <HashLink to="/about#about-us" className="text-decoration-none">
+              <p className="nav-name">About us</p>
+            </HashLink>
+          </a>
+          <a>
+            {" "}
+            <HashLink to="/services#services" className="text-decoration-none">
+              <p className="nav-name">Services</p>
+            </HashLink>
+          </a>
+          <a>
+            <HashLink
+              to="/contactus#contact-us"
+              className="text-decoration-none"
+            >
+              <p className="nav-name">Careers</p>
+            </HashLink>
+          </a>
+          <a>
+            <HashLink
+              to="/contactus#contact-us"
+              className="text-decoration-none"
+            >
+              <p className="nav-name">Contact us</p>
+            </HashLink>
+          </a>
         </div>
       </div>
-
-
     </>
   );
 };

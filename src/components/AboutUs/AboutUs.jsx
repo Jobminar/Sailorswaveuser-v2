@@ -25,6 +25,7 @@ const AboutUs = () => {
                 <img src={phoneIcon} alt="Phone Icon" />
                 <a href="tel:+918790695737">+918790695737</a>
               </div>
+              <br />
               <div className="contact-item">
                 <img src={phoneIcon} alt="Phone Icon" />
                 <a href="tel:+91 40-35174520">+91 40-35174520</a>
